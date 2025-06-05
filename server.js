@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Routes
 const authRoutes = require('./routes/authRoutes');
-const productRoutes = require('./routes/productRoutes');
+const productRoutes = require('./routes/productRoutes.js');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes); // ✅ New product API route
